@@ -1,0 +1,20 @@
+=> Compile Module
+make
+
+Output:
+hello_world.ko
+
+=>Load Module
+sudo insmod hello_world.ko
+
+
+Check:
+
+dmesg | tail
+=> Unload Module
+sudo rmmod hello_world
+
+
+Check:
+
+dmesg | tail
